@@ -1,6 +1,9 @@
 [submodule "src/protobuf"]
 	path = src/protobuf
 	url = https://github.com/google/protobuf.git
+[submodule "src/googlemock"]
+	path = src/googlemock
+	url = https://github.com/google/googlemock.git
 [submodule "src/googletest"]
 	path = src/googletest
 	url = https://github.com/google/googletest.git

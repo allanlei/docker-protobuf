@@ -3,7 +3,8 @@ MAINTAINER      Allan Lei <allanlei@helveticode.com>
 
 ADD             src/ /usr/src/
 WORKDIR         /usr/src/protobuf
-RUN             ln -s /usr/src/googletest gtest
+RUN             ln -s /usr/src/googletest gtest && \
+                ln -s /usr/src/googlemock gmock
 RUN             ./autogen.sh && \
                 ./configure && \
                 make && \
